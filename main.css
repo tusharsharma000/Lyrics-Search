@@ -25,6 +25,21 @@ input:focus,
 button:focus {
    outline: none;
 }
+/* header{
+    background: linear-gradient(to right,
+    rgba(213, 15, 61, 0.6),
+     rgba(22, 17, 198, 0.69)),
+     url(./guitar.jpg);
+
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 17%, 100% 60%, 87% 82%, 13% 81%, 0% 60%, 0 16%);
+} */
 
 header{
     color: white;
@@ -38,7 +53,8 @@ header{
     background-size: cover;
     background-position:center;
     position: relative;
-    clip-path: polygon(50% 0%, 100% 17%, 100% 60%, 87% 82%, 13% 81%, 0% 60%, 0 16%);;
+    clip-path: polygon(50% 0%, 100% 17%, 100% 60%, 87% 82%, 13% 81%, 0% 60%, 0 16%);
+    
 
 }
 .container {
@@ -81,6 +97,8 @@ form {
 }
 
 input {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
     height: 45px;
@@ -111,7 +129,7 @@ input {
     color: white;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 20px;
+    margin-top: 15px;
     position: relative;
     display: block;
     
@@ -132,6 +150,28 @@ padding-left: 10px;
 padding-right: 10px;
 
 }  
+@media only screen and (max-width: 800px) {
+    header{
+        height: 70vh;
+        width: 95%vw;
+    }
+    .container{
+        font-size: 20px;
+        
+    }
+    form{
+        max-width: 300px;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        padding: 12px 20px;
+  
+    }
+    button{
+        width: 80px;
+        max-width: 100%;
+    
 
 
 
